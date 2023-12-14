@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Midterm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+
 </head>
 <body>
-  
-</body>
-</html>
+   
+    <!-- Body is the element that contain all content shoen to a visitor. --> 
+
+    <header>
+        <!-- The header shows the logo and page title.-->
+        <nav class="navbar">
+            <div class="logo"><img src="img/web-development-svgrepo-com.svg" alt="Code logo">
+                <h1>Diogo's Web Development</h1></div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+            <!--This is my bio -->
+
+            <h2>Biography:</h2>
+            <div>
+                <p>Hi, my name is Diogo Alves. I've been a website developer for almost 5 years now. I'm an awesome web developer. I create websites that look great and work smoothly. My code is neat and efficient, which is a big deal in web development. I always stay in the loop with the latest web tech, so my websites are super modern. Plus, I'm great at solving problems, work well with others, and always make top-notch websites.</p>
+            </div>
+
+            <h2>Websites Created:</h2>
+            <div>
+                <li>www.apple.com</li>
+                <li>www.google.com</li>
+                <li>www.microsoft.com</li>
+            </div>
+
+        </section>
+        
+
+        <section id="gallery">
+
+            <h2>Photo Gallery</h2>
+
+            <hr>
+
+            <figure>
+                <img src="img/Me_640x480.jpeg.webp"
+            alt="Me in Aruba standing in front of Divi Tree">
+            <figcaption>Me in Aruba standing in front of Divi Tree</figcaption>
+        </figure>
+
+        </section>
+    
+    </main>
+
+    <section id="reviews">
+
+      <h2>Reviews:</h2>
+
+      <ul>
+          <li>Working with Diogo was a breeze! They turned my vision into a visually stunning and highly functional website. Communication was top-notch, and their technical expertise ensured a seamless user experience across all devices. I highly recommend Diogo for anyone seeking a design pro who truly cares about bringing your ideas to life!</li>
+          <li>Hats off to Diogo for crafting an exceptional website for my business! Their creativity, attention to detail, and technical finesse resulted in a site that exceeded my expectations. Communication was seamless, and the end product speaks volumes about their passion for delivering top-tier design. Diogo is my go-to for all things web design—highly recommended!</li>
+          <li>A huge shoutout to Diogo for creating magic with my website! Their design skills are unmatched, turning my ideas into a stunning reality. The entire process was smooth, with Diogo being a creative wizard and a true professional. If you're after a website that stands out, look no further. Diogo is the real deal!</li>
+      </ul>
+
+  </section>
+
+    <section id="contact">
+
+        <h2>Contact Me:</h2>
+
+        <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+            <fieldset>
+                <legend>Contact Form</legend>
+
+                <div id="formElements">
+                
+                    <!-- Name -->
+                    <label for="name">Name (required)</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <!-- Email -->
+                    <label for="email">Email (required)</label>
+                    <input type="email" id="email" name="email" 
+                    required>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <!-- Phone type-->
+                    <label for="phonetype">Phone type (optional)</label>
+                    <select id="phonetype" name="phonetype">
+                        <option value="" selected>Select phone type</option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Work">Work</option>
+                        <option value="Home">Home</option>
+                    </select>
+
+                    <!-- Message -->
+                    <label for="message">Message (optional)</label>
+                    <textarea id="message" name="message" rows="8"></textarea>
+
+                    <!-- Reply -->
+                    <fieldset>
+                        <legend>Would you like a reply?</legend>
+
+                        <ul>
+                            <li>
+                                <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                <label for="message-yes"> Yes a reply would be nice.
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" id="message-no" name="reply" value="No reply please." checked>
+                                <label for="message-no"> No, thanks.</label>
+                            </li>
+                        </ul>
+
+                    </fieldset>
+
+                    <!-- Submit -->
+                    <button type="submit">Send</button>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        © 2023 - Diogo Alves
+
+    </footer>
